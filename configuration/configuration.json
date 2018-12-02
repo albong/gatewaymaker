@@ -1,111 +1,111 @@
 {
-    "test header file path" : "configuration/test_header.tex",
-    "answer key header file path" : "configuration/answer_key_header.tex",
-    
-    "question sets" : [
+    "question sets": [
         {
-            "number of questions" : 1,
-            "question files" : [
+            "number of questions": 1,
+            "question files": [
                 {
-                    "instructions" : "Perform the indicated operation and reduce to lowest terms.",
-                    "file path" : "question_files/1-15.tex"
+                    "instructions": "Perform the indicated operation and reduce to lowest terms.",
+                    "file path": "question_files/1-15.tex"
                 }
             ]
         },
         {
-            "number of questions" : 1,
-            "question files" : [
+            "number of questions": 1,
+            "question files": [
                 {
-                    "instructions" : "Evaluate the given expression.",
-                    "file path" : "question_files/16-30.tex"
+                    "instructions": "Evaluate the given expression.",
+                    "file path": "question_files/16-30.tex"
                 }
             ]
         },
         {
-            "number of questions" : 2,
-            "question files" : [
+            "number of questions": 2,
+            "question files": [
                 {
-                    "instructions" : "Simplify: write with positive exponents only.",
-                    "file path" : "question_files/31-55.tex"
+                    "instructions": "Simplify: write with positive exponents only.",
+                    "file path": "question_files/31-55.tex"
                 }
             ]
         },
         {
-            "number of questions" : 2,
-            "question files" : [
+            "number of questions": 2,
+            "question files": [
                 {
-                    "instructions" : "Evaluate.",
-                    "file path" : "question_files/56-80.tex"
+                    "instructions": "Evaluate.",
+                    "file path": "question_files/56-80.tex"
                 }
             ]
         },
         {
-            "number of questions" : 2,
-            "question files" : [
+            "number of questions": 2,
+            "question files": [
                 {
-                    "instructions" : "Simplify: write the expression using only positive exponents.",
-                    "file path" : "question_files/81-105.tex"
+                    "instructions": "Simplify: write the expression using only positive exponents.",
+                    "file path": "question_files/81-105.tex"
                 }
             ]
         },
         {
-            "number of questions" : 2,
-            "question files" : [
+            "number of questions": 2,
+            "question files": [
                 {
-                    "instructions" : "Simplify the given expressions.",
-                    "file path" : "question_files/106-115.tex"
+                    "instructions": "Simplify the given expressions.",
+                    "file path": "question_files/106-115.tex"
                 },
                 {
-                    "instructions" : "Find the product.",
-                    "file path" : "question_files/116-130.tex"
+                    "instructions": "Find the product.",
+                    "file path": "question_files/116-130.tex"
                 }
             ]
         },
         {
-            "number of questions" : 4,
-            "question files" : [
+            "number of questions": 4,
+            "question files": [
                 {
-                    "instructions" : "Factor completely.",
-                    "file path" : "question_files/131-180.tex"
+                    "instructions": "Factor completely.",
+                    "file path": "question_files/131-180.tex"
                 }
             ]
         },
         {
-            "number of questions" : 2,
-            "question files" : [
+            "number of questions": 2,
+            "question files": [
                 {
-                    "instructions" : "Perform the indicated operation and simplify.",
-                    "file path" : "question_files/181-200.tex"
+                    "instructions": "Perform the indicated operation and simplify.",
+                    "file path": "question_files/181-200.tex"
                 }
             ]
         },
         {
-            "number of questions" : 2,
-            "question files" : [
+            "number of questions": 2,
+            "question files": [
                 {
-                    "instructions" : "Simplify.",
-                    "file path" : "question_files/201-225.tex"
+                    "instructions": "Simplify.",
+                    "file path": "question_files/201-225.tex"
                 }
             ]
         },
         {
-            "number of questions" : 2,
-            "question files" : [
+            "number of questions": 2,
+            "question files": [
                 {
-                    "instructions" : "Simplify each expression.",
-                    "file path" : "question_files/226-238.tex"
+                    "instructions": "Simplify each expression.",
+                    "file path": "question_files/226-238.tex"
                 },
                 {
-                    "instructions" : "Perform the indicated operation and simplify.",
-                    "file path" : "question_files/239-244.tex"
+                    "instructions": "Perform the indicated operation and simplify.",
+                    "file path": "question_files/239-244.tex"
                 },
                 {
-                    "instructions" : "Rationalize the denominator.",
-                    "file path" : "question_files/245-250.tex"
+                    "instructions": "Rationalize the denominator.",
+                    "file path": "question_files/245-250.tex"
                 }
             ]
         }
     ],
-    
-    "page breaks after questions" : [3,4]
+    "page breaks after questions": [
+        5,
+        11,
+        18
+    ]
 }
