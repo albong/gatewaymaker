@@ -125,7 +125,7 @@ def createTests(config, numberOfTests):
                 else:
                     answerTex.append(cleanLine[2:])
                     i+=1
-                #PIZZA - improve comment symbol removal?
+                #TODO - improve comment symbol removal?
             questionFile["question tex"] = questionTex
             questionFile["answer tex"] = answerTex
             
@@ -309,6 +309,9 @@ def displayMainMenu(config):
             exitProgram = True
             
 def displayConfig(config):
+    """
+    As the name suggests, it displays the current configuration.
+    """
     print("The sets of questions:")
     totalNumberOfQuestions = 0
     for i in range(0, len(config["question sets"])):
@@ -488,7 +491,38 @@ def displayGeneralEditMenu(config):
     return config
     
 def displayHelp():
-    print("NOT IMPLEMENTED")
+    print("\
+gatewaymaker is a tool for generating the .tex files for random tests.  It pulls\n\
+from a variety of .tex files located in the directory 'question_files'.  The\n\
+configuration of gatewaymaker is contained in a JSON file in the 'configuration'\n\
+directory, however, it is possible to edit the configuration from inside of\n\
+gatewaymaker.  There are also .tex files in the 'configuration' directory that\n\
+are used when generating the tests, they contain the preamble and beginning of\n\
+the document through the title.  They will not compile as is - gatewaymaker will\n\
+complete them during the process of test generation.\n\
+\n\
+A test is composed of 'sets' of questions.  A fixed number of questions will be\n\
+chosen at random from each set to make the test.  A set of questions may be\n\
+composed of multiple source files, each with different instructions.  In this\n\
+way, collections of questions with common themes may be pooled into one group\n\
+from which to choose questions at random.\n\
+\n\
+For example, if you want to have five questions about factoring, you could have\n\
+one file with simple factoring questions and the instructions 'Factor\n\
+completely', and another file with factor by grouping questions and the\n\
+directions 'Factor by grouping'.  If configured as one set, gatewaymaker will\n\
+randomly choose five questions from between these two files, and correctly\n\
+insert the instructions depending on what questions were chosen.\n\
+\n\
+If, in your source question files, the line following a question starts with\n\
+some amount of spaces and then '%%', that line will be interpreted as an answer\n\
+to the previous line's question.  This will then be inserted into an answer key\n\
+that is also generated along with the test.\
+\n\
+Finally, if your questions have consistent amounts of spacing, gatewaymaker can\n\
+also be configured to add '\\newpage' where you want - otherwise you will have\n\
+to manually adjust the page breaks in the output tests as needed.\
+    ")
     
 def saveConfig(config):
     with open(CONFIG_FILE_PATH, "w") as fout:
