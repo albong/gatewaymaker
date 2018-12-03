@@ -1,4 +1,4 @@
-# gatwaymaker.py
+# gatewaymaker.py
 
 ## Overview
 gatewaymaker.py is a tool for generating LaTeX files for random tests.  It is named after the "gateway" tests it was written to generate: students are given a very long list of problems in advance, and then take tests where the questions are randomly pulled from the list (subject to some constraints).  If students fail the test, they keep retaking it until they pass, with each retest having different random questions.
